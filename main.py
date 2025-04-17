@@ -97,7 +97,7 @@ def display_image(filename):
 
     html = "<h1>" + json_object["title"] + "</h1>"
     html += "<h3>" + json_object["description"] + "</h3>"
-    html += "<img src\"/files/" + filename + "\" alt=\"" + json_object["title"] + "\">"
+    html += "<img src=\"/files/" + filename + "\" alt=\"" + json_object["title"] + "\">"
     return html
     
 
