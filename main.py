@@ -77,8 +77,7 @@ def list_files():
     
     html = "<ul>"
     for i in images:
-        #html += f"<li><a href={"/imageview/" + i}>{i}</a></li>"
-        html += f"<li>test</li>"
+        html += "<li><a href=" + "/imageview/" + i + ">" + i + "</a></li>"
     html += "</ul>"
     print(html)
     return html
