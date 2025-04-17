@@ -3,6 +3,9 @@ import json
 from google.cloud import storage
 from gemini import describe_image
 
+import sys
+print("Python version:", sys.version)
+
 
 storage_client = storage.Client()
 BUCKET_NAME = "lmattos-project2"
