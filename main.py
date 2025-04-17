@@ -93,9 +93,9 @@ def display_image(filename):
       json_object = json.load(openfile)
 
 
-    html = f"<h1>{json_object["title"]}</h1>"
-    html += f"<h3>{json_object["description"]}</h3>"
-    html += f"<img src=/files/{filename} alt=\"{json_object["title"]}\">"
+    html = "<h1>" + json_object["title"] + "</h1>"
+    html += "<h3>" + json_object["description"] + "</h3>"
+    html += "<img src=/files/" + filename + "alt=\"" + json_object["title"] + "\">"
     return html
     
 
